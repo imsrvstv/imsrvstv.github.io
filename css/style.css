@@ -19,7 +19,7 @@
 }
 .sty2 .lead{
     position: relative;
-    animation: secanim 1.5s ease-in-out;
+    animation: secanim 1.8s ease-in-out;
 }
 
 @keyframes firanim {
