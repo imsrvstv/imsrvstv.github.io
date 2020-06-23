@@ -3,10 +3,32 @@
     height: 100vh;
     align-items: center;
     display: flex;
+    position: relative;
 }
-div {
-    margin: 0px;
+
+.sty {
+    display: inline-block;
+    position: relative;
 }
-.navbar {
-    margin: 0px;
+
+.sty1, .sty2 {
+    overflow: hidden;
+}
+.sty1 .lead{
+    position: relative;
+    animation: firanim 1s ease-in-out;
+   
+}
+.sty2 .lead{
+    position: relative;
+    animation: secanim 1.5s ease-in-out;
+}
+
+@keyframes firanim {
+    from {top:-50px;}
+    to {top:0px;}
+}
+@keyframes secanim {
+    from {left:-55vw;}
+    to {left:0px;}
 }
