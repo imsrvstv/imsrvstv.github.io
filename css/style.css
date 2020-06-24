@@ -1,8 +1,30 @@
+.stynav {
+    background-color: #353b48;
+    color: white;
+}
+
+
+.stynav div ul li {
+    margin: 0px 10px;
+}
+.stynav div button {
+    padding: 5px 15px;
+    margin: 0px 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(41, 128, 185, 1.0);
+    color: white;
+}
+.stynav div button:hover {
+    background-color: rgba(41, 128, 185, 0.8);
+}
+
+
+
 .jumbotron {
     height: 100%;
     height: 100vh;
     align-items: center;
-    display: flex;
 }
 
 .sty, .sty1, .sty2 {
@@ -25,6 +47,12 @@
     animation: secanim 1.5s ease-in-out;
 }
 
+.stydisp {
+    font-size: 35px;
+}
+.stypar {
+    text-align: justify;
+}
 
 @keyframes firanim {
     from {top:-50px;}
@@ -37,4 +65,11 @@
 @keyframes thiranim {
     from {right: -50px;}
     to {right: 0px;}
+}
+
+@media screen and (max-width: 575px) {
+    .sty2 .lead{
+        position: relative;
+        animation: secanim 2s ease-in-out;
+    }
 }
