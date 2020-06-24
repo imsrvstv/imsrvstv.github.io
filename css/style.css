@@ -5,13 +5,16 @@
     display: flex;
 }
 
-.sty {
-    display: inline-block;
-}
-
-.sty1, .sty2 {
+.sty, .sty1, .sty2 {
     overflow: hidden;
 }
+
+
+.sty span {
+    position: relative;
+    animation: thiranim 0.5s ease-in-out;
+}
+
 .sty1 .lead{
     position: relative;
     animation: firanim 1s ease-in-out;
@@ -19,8 +22,9 @@
 }
 .sty2 .lead{
     position: relative;
-    animation: secanim 1.8s ease-in-out;
+    animation: secanim 1.5s ease-in-out;
 }
+
 
 @keyframes firanim {
     from {top:-50px;}
@@ -29,4 +33,8 @@
 @keyframes secanim {
     from {left:-100vw;}
     to {left:0px;}
+}
+@keyframes thiranim {
+    from {right: -50px;}
+    to {right: 0px;}
 }
