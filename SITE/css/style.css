@@ -72,4 +72,10 @@
         position: relative;
         animation: secanim 2s ease-in-out;
     }
+    .collapse {
+        display: flex;
+        height: 100vh;
+        justify-content: center;   
+    }
+
 }
